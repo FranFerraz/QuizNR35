@@ -48,7 +48,7 @@ var get_next_question = function()
         }else
         {
             //end of quiz
-            write_final_screen();
+            write_score_screen();
             $('.content-modal').show();
         }     
     }, 1000);
@@ -121,12 +121,28 @@ var write_question_screen = function()
 };
 
 
-var write_final_screen = function()
+var write_score_screen = function()
 {
-    modal = "<div class='modal-header'><h3 class='col-12 modal-title text-center'><span class='label label-warning' id='qid'></span>Pontuação</h3></div>";
-    modal += "<div class='modal-body'><div class='final-score quiz-bold-white-content'>" + score + "/" + num_of_questions + "</div></br><div class='final-message quiz-bold-white-content'>" + get_final_message() + "</div></br><button class='element-animation1 btn btn-lg btn-light text-dark' onclick='restart_quiz()'>Jogar Novamente</button></div>";
+    modal = "<div class='modal-header'><h2 class='col-12 modal-title text-center'><span class='label label-warning' id='qid'></span>Pontuação</h2></div>";
+    modal += "<div class='modal-body'><div class='final-score quiz-bold-white-content'>" + score + "/" + num_of_questions + "</div></br><div class='final-message quiz-bold-white-content'>" + get_final_message() + "</div></br><button class='element-animation1 btn btn-lg btn-light text-dark btn-score' onclick='restart_quiz()'>Reiniciar</button></div>";
+    modal += "<div class='modal-body'> <button class='element-animation1 btn btn-lg btn-light text-dark btn-score' onclick='write_final_screen()'>Finalizar</button></div>";
     modal += "<div class='modal-footer' style='justify-content: space-between'></div>";
+    
     
     $(".content-modal").html("");
     $(".content-modal").html(modal);
 }; 
+
+
+var write_final_screen = function()
+{
+    modal = "<div class='modal-header'><h3 class='col-12 modal-title text-center'></h3></div>";
+    modal += "<div class='modal-body'> <div class='capa text-center'><img class='img-fluid log-fim' src='images/NR35Min.png' alt=''></div></br><div class='thank-message quiz-bold-white-content'> Obrigada pela sua participação! </div></div>";
+    modal += "<div class='modal-footer' style='justify-content: space-between'></div>";
+    
+    
+    $(".content-modal").html("");
+    $(".content-modal").html(modal);
+}; 
+
+
