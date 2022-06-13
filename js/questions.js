@@ -30,7 +30,7 @@ questions = {
             "a2": "Semestral (6 meses).",
 	        "a3": "Bienal (2 anos).",
         },
-        "correct_answer": "a3"
+        "correct_answer": "a1"
     },
     "4": {
         "question": "4 - Para que o sistema de ancoragem seja utilizado sem apresentar riscos à vida e segurança dos colaboradores, os pontos de ancoragem podem:",
@@ -179,7 +179,7 @@ questions = {
         "type": "multi",
         "answers": {
             "a1": "A Zona Livre de Quedas trata-se do ponto de ancoragem versus o fator de quedas ideal.",
-            "a2": "Zona Livre de Quedas é a razão entre a distância que o colaborador percorrerá em um queda.",
+            "a2": "Zona Livre de Quedas é a razão entre a distância que o colaborador percorrerá em uma queda.",
             "a3": "Zona Livre de Quedas é a região compreendida entre o ponto de ancoragem e o obstáculo inferior mais próximo contra o qual o colaborador possa colidir em caso de quedas.",
         },
         "correct_answer": "a3"
@@ -228,11 +228,11 @@ questions = {
         "question": "23 - Qual das alternativas podem interromper a execução de atividades em altura?",
         "type": "multi",
         "answers": {
-            "a1": "Ambientes extremamente iluminado, ventos superiores à 50 Km/h, colaboradores com a capacitação necessária para executar atividades em altura.",
-            "a2": "Chuva, ventos inferior a 10 Km/h, colaboradores habilitados para atividades em altura.",
-            "a3": "Chuva, ventos (Superiores 40Km/h), iluminação precária, colaboradores sem a capacitação necessária exigida.",
+            "a1": "Chuva, ventos superiores à 40Km/h, iluminação precária, colaboradores sem a capacitação necessária exigida.",
+            "a2": "Ambiente iluminado, ventos superiores à 40 Km/h, colaboradores com a capacitação necessária para executar atividades em altura.",
+            "a3": "Chuva, ventos inferiores à 40Km/h, colaboradores habilitados para atividades em altura.",
         },
-        "correct_answer": "a3"
+        "correct_answer": "a1"
     },
     "24": {
         "question": "24 -  Em uma emergência é extremamente importante que saibamos:",
